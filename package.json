@@ -1,0 +1,23 @@
+{
+  "name": "playus-devkit-games",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Public Playus game developer kit with a local tester and example games.",
+  "scripts": {
+    "dev": "vite --host --port 8091",
+    "dev:starter": "vite games/starter-game --config vite.config.ts --host --port 8090 --strictPort",
+    "dev:phaser": "vite games/phaser-example --config vite.config.ts --host --port 8090 --strictPort",
+    "dev:babylon": "vite games/babylon-example --config vite.config.ts --host --port 8090 --strictPort",
+    "build": "tsc --noEmit && vite build --outDir dist/tester && vite build games/starter-game --config vite.config.ts --outDir ../../dist/games/starter-game --emptyOutDir false && vite build games/phaser-example --config vite.config.ts --outDir ../../dist/games/phaser-example --emptyOutDir false && vite build games/babylon-example --config vite.config.ts --outDir ../../dist/games/babylon-example --emptyOutDir false",
+    "preview": "vite preview --host --port 4173"
+  },
+  "dependencies": {
+    "@babylonjs/core": "^8.31.2",
+    "phaser": "^3.80.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2",
+    "vite": "^8.1.0"
+  }
+}

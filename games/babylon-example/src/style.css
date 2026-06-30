@@ -1,0 +1,22 @@
+.babylon-game canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  outline: none;
+}
+
+.babylon-game .score {
+  position: absolute;
+  z-index: 2;
+  top: 7vh;
+  left: 0;
+  right: 0;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Unbounded", system-ui, sans-serif;
+  font-size: min(12vh, 21vw);
+  font-weight: 900;
+  pointer-events: none;
+}

@@ -1,0 +1,25 @@
+.starter-game {
+  background: #17171d;
+}
+
+.score {
+  position: absolute;
+  top: 10vh;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-family: "Unbounded", system-ui, sans-serif;
+  font-size: min(14vh, 24vw);
+  font-weight: 900;
+}
+
+.target {
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  border: 0;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: #8ed7b5;
+  box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.15), 0 16px 36px rgba(0, 0, 0, 0.32);
+}
