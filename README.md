@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/assets/playus-web-preview.jpg" alt="Playus dice logo" width="720" />
+</p>
+
 # Playus Devkit Games
 
 Public starter kit for building small Playus-style web games.
